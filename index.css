@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: black;
+    /* padding-top: 70px; */
+}
+/* header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+    height: 80px;
+} */
+.hero{
+    background-image: url(./img/more\ black\ hat.jpg);
+    min-height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 90vh;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 30px;
+}
+nav a:hover{
+    color: rgb(212, 212, 136);
+}
+nav button{
+    height: 100%;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-right: 50px;
+    border: 1px;
+    border-radius: 7px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+nav button:hover{
+    color: rgb(212, 212, 136);
+}
+img{
+    width: 50%;
+    height: 100%;
+}
+.logo{
+    position: absolute;
+    height: auto;
+    left: 20px;
+    width: 150px;
+    margin-top: 10px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.moHome{
+    color: black;
+}
+.moAbout{
+    color: black;
+}
+.moService{
+    color: black;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 500px;
+    }
+}
+.menu-button{
+    display: none;
+}
+.hero-txt{
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero-txt-2{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Montserrat', "Playwrite";
+}
+.exp-btn{
+    height: 100%;
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    margin-left: 470px;
+    margin-top: 10px;
+    border: 1px;
+    border-radius: 7px 0 7px 0;
+    border: 1px solid #F8F8FF;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.exp-btn:hover{
+    background-color: white;
+    color: black;
+}
+.second-section{
+    background-color: #272525;
+    color: #C2A57E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding: 32px;
+}
+.text-content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+.text-content p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    margin-right: 80px;
+}
+.read-more{
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #C2A57E;
+    border-radius: 7px 0 7px 0;
+    background-color: transparent;
+    color: #C2A57E;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.read-more:hover{
+    background-color: #C2A57E;
+    color: black;
+}
+.image-content{
+    display: flex;
+    flex-direction: row;
+    gap: 1;
+    position: relative;
+}
+.image-top{
+    width: 200px;
+    position: absolute;
+    right: 250px;
+    bottom: 50px;
+    z-index: 1;
+}
+.image-bottom{
+    width: 105%;
+    object-fit: contain;
+    margin-right: 80px;
+}
+.image-content img{
+   height: auto;
+    object-fit: cover;
+}
+.third-section{
+    background-color: #C2A57E;
+    color: #272525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    padding: 32px;
+}
+.sec-text-content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    margin-bottom: 16px;
+    margin-left: 80px;
+}
+.sec-text-content h5{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 30px;
+    font-size: 15px;
+    margin-left: 80px;
+}
+.sec-text-content p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    margin-left: 80px;
+}
+.read-more-2{
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid #272525;
+    border-radius: 7px 0 7px 0;
+    background-color: transparent;
+    color: #272525;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 80px;
+}
+.read-more-2:hover{
+    background-color: black;
+    color: #C2A57E;
+}
+.sec-image-content{
+    display: flex;
+    flex-direction: row;
+    gap: 1;
+    position: relative;
+}
+.image-top-2{
+    width: 200px;
+    position: absolute;
+    left: 300px;
+    bottom: 50px;
+    z-index: 1;
+}
+.image-bottom-2{
+    width: 75%;
+    object-fit: contain;
+    margin-right: 80px;
+}
+.sec-image-content img{
+    height: auto;
+    object-fit: cover;
+}
+.fourth-section{
+    background-color: #272525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    padding: 32px;
+}
+.carousel-indicators{
+    bottom: -60px;
+}
+.carousel-control-prev, .carousel-control-next{
+     top: 50%;
+   /* transform:translateY(-50%);*/
+    width: 30px; 
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+   color: black;
+   width: 20px;
+   height: 20px;
+   
+}
+.carousel-control-prev-icon{
+    left: -150px;
+}
+.carousel-control-next-icon{
+    right: -150px;
+}
+.fifth-section{
+    background-image: url(./img/woman-laying-down-sexy-portrait-preview.jpg);
+    min-height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fourth-hero-txt{
+    text-align: center;
+    color: white;
+    justify-content: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.second-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 80vh;
+}
+.section-container{
+    padding-top: 100px;
+}
+.footer{
+    min-height: 40vh;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.footer-logo{
+    width: 300px;
+    margin-left: 420px;
+}
+.copyright{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
