@@ -17,37 +17,37 @@
 
 <body>
     <section class="hero">
+        <header>
+            <a href="index.html"> <img src="./img/cropped-SE__3_-removebg-preview.png" class="logo"></a>
+             <nav>
+                 <!-- Mobile Menu  -->
+                 <ul class="sidebar">
+                     <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                 viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                 <path
+                                     d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                             </svg></a></li>
+                     <li><a href="#" class="moHome">Home</a></li>
+                     <li><a href="#" class="moAbout">About</a></li>
+                     <li><a href="#" class="moService">Services</a></li>
+                     <li><a href="#" class="moContact">Contact</a></li>
+                     <!-- <li><button class="moHost">Host Your Event</button></li> -->
+                 </ul>
+                 <!-- Desktop Menu  -->
+                 <ul>
+                     <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                     <li class="hideOnMobile"><a href="about.html">About</a></li>
+                     <li class="hideOnMobile"><a href="#">Services</a></li>
+                     <li class="hideOnMobile"><button>Contact</button></li>
+                     <li class="menu-button" onclick=showSideBar()><a href="#"><svg
+                                 xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                 width="24px" fill="#e8eaed">
+                                 <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                             </svg></a></li>
+                 </ul>
+             </nav>
+         </header>
         <div class="overlay">
-            <header>
-               <a href="index.html"> <img src="./img/cropped-SE__3_-removebg-preview.png" class="logo"></a>
-                <nav>
-                    <!-- Mobile Menu  -->
-                    <ul class="sidebar">
-                        <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                    viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                                    <path
-                                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                                </svg></a></li>
-                        <li><a href="#" class="moHome">Home</a></li>
-                        <li><a href="#" class="moAbout">About</a></li>
-                        <li><a href="#" class="moService">Services</a></li>
-                        <li><a href="#" class="moContact">Contact</a></li>
-                        <!-- <li><button class="moHost">Host Your Event</button></li> -->
-                    </ul>
-                    <!-- Desktop Menu  -->
-                    <ul>
-                        <li class="hideOnMobile"><a href="index.html">Home</a></li>
-                        <li class="hideOnMobile"><a href="about.html">About</a></li>
-                        <li class="hideOnMobile"><a href="#">Services</a></li>
-                        <li class="hideOnMobile"><button>Contact</button></li>
-                        <li class="menu-button" onclick=showSideBar()><a href="#"><svg
-                                    xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                                    width="24px" fill="#e8eaed">
-                                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                                </svg></a></li>
-                    </ul>
-                </nav>
-            </header>
             <div class="container">
                 <h1 class="hero-txt">ELEVATE YOUR BRAND</h1>
                 <h2 class="hero-txt-2">with style and elegance </h2>
@@ -100,8 +100,8 @@
     <section class="fourth-section">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                    class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
             </div>
@@ -119,8 +119,8 @@
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <div class="col-3"> <img src="./img/best-logos-2020-19 (1).jpg" alt=""
-                                class="d-block w-100"></div>
+                        <div class="col-3"> <img src="./img/best-logos-2020-19 (1).jpg" alt="" class="d-block w-100">
+                        </div>
                         <div class="col-3"> <img src="./img/alphabet-logo-design-concept_780430-1672.jpg" alt=""
                                 class="d-block w-100"></div>
                         <div class="col-3"><img src="./img/bird.jpg" alt="" class="d-block w-100"></div>
@@ -140,41 +140,52 @@
 
     <section class="fifth-section">
         <div class="second-overlay">
-           <div class="section-container">
-            <div>
-                <h1 class="fourth-hero-txt">Press Features</h1>
-            </div>
+            <div class="section-container">
+                <div>
+                    <h1 class="fourth-hero-txt">Press Features</h1>
+                </div>
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                                <div class="col-3"><img src="./img/Bloomberg-symbol-removebg-preview-300x90-1.png" alt="" class="d-block w-100"></div>
+                                <div class="col-3"><img src="./img/Bloomberg-symbol-removebg-preview-300x90-1.png"
+                                        alt="" class="d-block w-100"></div>
                                 <div class="col-3"><img src="./img/bootcamp.png" alt="" class="d-block w-100"></div>
-                                <div class="col-3"><img src="./img/All-Black-logo-300x58-1.png" alt="" class="d-block w-100"></div>
-                                <div class="col-3"><img src="./img/The-Wall-Street-Journal-Logo-removebg-preview-edit (1).png" alt="" class="d-block w-100"></div>
+                                <div class="col-3"><img src="./img/All-Black-logo-300x58-1.png" alt=""
+                                        class="d-block w-100"></div>
+                                <div class="col-3"><img
+                                        src="./img/The-Wall-Street-Journal-Logo-removebg-preview-edit (1).png" alt=""
+                                        class="d-block w-100"></div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <div class="col-3"> <img src="./img/Bloomberg-symbol-removebg-preview-300x90-1.png" alt="" class="d-block w-100"></div>
+                                <div class="col-3"> <img src="./img/Bloomberg-symbol-removebg-preview-300x90-1.png"
+                                        alt="" class="d-block w-100"></div>
                                 <div class="col-3"> <img src="./img/bootcamp.png" alt="" class="d-block w-100"></div>
-                                <div class="col-3"><img src="./img/All-Black-logo-300x58-1.png" alt="" class="d-block w-100"></div>
-                                <div class="col-3"> <img src="./img/The-Wall-Street-Journal-Logo-removebg-preview-edit (1).png" alt="" class="d-block w-100"></div>
+                                <div class="col-3"><img src="./img/All-Black-logo-300x58-1.png" alt=""
+                                        class="d-block w-100"></div>
+                                <div class="col-3"> <img
+                                        src="./img/The-Wall-Street-Journal-Logo-removebg-preview-edit (1).png" alt=""
+                                        class="d-block w-100"></div>
                             </div>
                         </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
                 </div>
-           </div>
             </div>
     </section>
 
